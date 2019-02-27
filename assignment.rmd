@@ -1,0 +1,136 @@
+---
+title: "Assignment0"
+author: "Sukhman Kaur"
+date: "February 21, 2019"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+
+
+##todo1
+```{R}
+(2017-2014)/(2014-1997)*100 
+```
+ 
+
+##todo2
+```{R}
+red = 2014 
+green = 2017 
+blue = 1997 
+white = 100 
+(2017-2014)/(2014-1997)*100
+```
+ 
+
+##todo3
+```{R}
+sum(c(4,5,8,11)) 
+```
+
+
+##todo4
+```{R}
+plot(rnorm(100))
+```
+
+
+##todo5
+```{R}
+help(sqrt)
+```
+
+
+##todo6
+```{R}
+x=rnorm(100)
+plot(x)
+```
+
+
+##todo7
+```{R}
+P = seq(from=31, to=60, by=1)
+print(P)
+Q = matrix(data=P, ncol=5, nrow=6 )
+print(Q)
+```
+
+
+##todo8
+```{R}
+x1 = c(rnorm(100)) 
+x2 = c(rnorm(100)) 
+x3 = c(rnorm(100)) 
+t = data.frame(a = c(x1), b = c(x1+x2), c = c(x1+x2+x3)) 
+plot(t) 
+sd(t[t>0]) 
+```
+
+
+##todo9 
+```{R}
+x1 = c(rnorm(100)) 
+x2 = c(rnorm(100)) 
+x3 = c(rnorm(100)) 
+t = data.frame(a = c(x1), b = c(x1+x2), c = c(x1+x2+x3)) 
+plot(t) 
+sd(t[t>0]) 
+plot(t$a, type="l", ylim=range(t), lwd=3, col=rgb(1,0,0,0.3)) 
+lines(t$b, type="s", lwd=2, col=rgb(0.3,0.4,0.3,0.9)) 
+points(t$c, pch=20, cex=4, col=rgb(0,0,1,0.3)) 
+```
+
+
+
+##todo10
+```{R}
+d = data.frame(a = c(1,2,4,8,16,32), g = c(2,4,8,16,32,64), x = c(3,6,12,24,48,96))
+write.table(d, file="tst1.txt",row.names=FALSE)
+d2 = read.table(file="tst1.txt",header=TRUE)
+d2 = d$g * 5
+d3 = write.table(d2 ,file = "tst2.txt")
+```
+
+
+##todo11
+```{R}
+mean(sqrt(c(rnorm(100))))
+```
+
+
+##todo12
+```{R}
+x = c("20190215", "20141205", "20190802")
+y = c(1,3,6)
+plot(x,y)
+```
+
+
+##todo13
+```{R}
+a = seq(from =1, to=100, by=1)
+s = c()
+for ( m in 1:100){  
+    if (a[m] < 5 ) {  
+        s[m] = a[m]*10;  
+    } else if (a[m] > 90) {  
+        s[m] = a[m]*10;  
+    } else { 
+        s[m] = a[m]*0.1; 
+    } 
+} 
+print (s)
+```
+
+
+##todo14
+```{R}
+b = function(x1,x2) { 
+        a[m] = x1[m]; 
+        for (m in length(a)){ 
+        } 
+} 
+```
